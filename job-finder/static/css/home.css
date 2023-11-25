@@ -106,3 +106,8 @@
 .job_card p > span {
 	font-weight: bold;
 }
+
+.job_card a {
+	color: #fff;
+	text-decoration: none;
+}
