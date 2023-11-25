@@ -17,7 +17,6 @@ except Exception as e:
 
 @app.route('/', methods=["GET", "POST"])
 def home():
-    print(f"data: {data}")
     return render_template("home.html.jinja", jobs=data["jobs"])
 
 @app.route('/jobs', methods=["GET"])
