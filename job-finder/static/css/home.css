@@ -111,3 +111,24 @@
 	color: #fff;
 	text-decoration: none;
 }
+
+.alert-wrapper {
+	z-index: 10;
+	position: fixed;
+	right: 10px;
+	width: 100%;
+	max-width: 20rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.6rem;
+	background-color: #fff6cc;
+	border-bottom: 4px solid rgba(255, 208, 0);
+}
+
+.alert-wrapper .alert-msg {
+	display: flex;
+	align-items: flex-end;
+	gap: 0.6rem;
+}
