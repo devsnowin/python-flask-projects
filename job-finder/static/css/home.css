@@ -112,7 +112,7 @@
 	text-decoration: none;
 }
 
-.alert-wrapper {
+.home-warning {
 	z-index: 10;
 	position: fixed;
 	right: 10px;
@@ -127,7 +127,7 @@
 	border-bottom: 4px solid rgba(255, 208, 0);
 }
 
-.alert-wrapper .alert-msg {
+.home-warning_msg {
 	display: flex;
 	align-items: flex-end;
 	gap: 0.6rem;
