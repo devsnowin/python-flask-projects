@@ -1,0 +1,10 @@
+<div class="job_card">
+    <div class="job_content">
+        <h3 class="job_title">{{job.title}}</h3>
+        <p class="job_description"><span>Location:</span>{{job.location}}</p>
+        {% if job.salary %}
+        <p class="job_salary"><span>Salary:</span> {{job.salary|safe}}</p>
+        {% endif %}
+    </div>
+    <button class="job_action">Apply</button>
+</div>

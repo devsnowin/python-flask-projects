@@ -1,0 +1,108 @@
+.app-name {
+	font-size: 2em;
+	margin: 2rem 1rem 4rem;
+	text-align: center;
+}
+
+.header {
+	position: relative;
+	/* width: 880px; */
+	/* min-height: 40vh; */
+	margin-inline: auto;
+	padding: 2rem 4rem;
+	overflow: hidden;
+	background-image: url(https://images.pexels.com/photos/5647231/pexels-photo-5647231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(10rem);
+	/* border-radius: 10px; */
+}
+
+.header_overlay {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(2px);
+}
+
+.header h1 {
+	/* max-width: 60rem; */
+	font-size: 6em;
+	text-align: center;
+	color: #fff;
+}
+
+.content {
+	padding-top: 4rem;
+}
+
+.content h1 {
+	text-align: center;
+}
+
+.about-app {
+	width: 880px;
+	margin-inline: auto;
+	margin-block: 2rem;
+}
+
+.about-app h1 {
+	/* text-align: left; */
+}
+
+.about-app p {
+	padding-block: 0.4rem;
+	text-align: center;
+}
+
+.job_cards {
+	margin-block: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.job_card {
+	width: 100%;
+	max-width: fit-content;
+	padding: 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+	transition: background-color 0.3s ease;
+}
+
+.job_card:hover {
+	cursor: pointer;
+	background-color: #f4f4f499;
+}
+
+.job_content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.job_title {
+	color: #767577;
+}
+
+.job_description {
+	width: 680px;
+	flex: 1;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: lighter;
+	/* font-size: 0.8em; */
+}
+
+.job_card p > span {
+	font-weight: bold;
+}

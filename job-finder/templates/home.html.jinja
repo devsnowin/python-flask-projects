@@ -1,0 +1,35 @@
+{% extends "base.html.jinja" %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/home.css')}}">
+{% endblock %}
+
+{% block app %}
+<h1 class="app-name">Pros Careers</h1>
+<header>
+    <div class="header">
+        <h1>Find your dream job with us</h1>
+        <div class="header_overlay"></div>
+    </div>
+</header>
+<main class="content">
+    <div class="about-app">
+        <h1>About Pros Career</h1>
+        <p>Pros Career is a business and employment-focused social media platform that works through websites and mobile
+            apps. It was launched on May 5, 2003. Since December 2016, it has been a wholly owned subsidiary of DevMade.
+            The platform is primarily used for professional networking and career development, and allows jobseekers to
+            post their CVs and employers to post jobs</p>
+    </div>
+    <h1>Job Openings</h1>
+    <div class="job_cards">
+        {% if jobs %}
+        {% for job in jobs %}
+        {% include "job-item.html.jinja" %}
+        {% endfor %}
+        {% else %}
+        <p>No jobs available</p>
+        {% endif %}
+    </div>
+    <a style="display:block; margin-inline: auto; margin-top: 2rem; text-align: center;" href="#">Contact</a>
+</main>
+{% endblock app %}
